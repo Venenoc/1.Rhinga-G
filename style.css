@@ -206,7 +206,7 @@ body {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   z-index: 100 !important;
-  width: 70% !important;
+  width: 80% !important;
   max-width: 420px !important;
 }
 
@@ -234,4 +234,19 @@ body {
   bottom: 100px;
   margin: 0 auto;
   font-weight: bold;
+}
+
+/* Mensaje específico para iOS */
+.ios-message {
+  bottom: 100px !important;
+}
+
+/* Mensaje específico para Android */
+.android-message {
+  bottom: 80px !important;
+}
+
+/* Mensaje específico para web */
+.web-message {
+  bottom: 100px !important;
 }

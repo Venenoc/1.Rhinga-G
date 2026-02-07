@@ -52,15 +52,20 @@ startBtn.addEventListener("click", () => {
   }
 });
 
-// Detectar plataforma y aplicar clase específica al video
+// Detectar plataforma y aplicar clase específica al video y al mensaje
 function setVideoPlatformClass() {
   const ua = navigator.userAgent || navigator.vendor || window.opera;
+  const quizMessage = document.getElementById('quiz-message');
+  
   if (/android/i.test(ua)) {
     rhinaVideo.classList.add('android-video');
+    quizMessage.classList.add('android-message');
   } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
     rhinaVideo.classList.add('ios-video');
+    quizMessage.classList.add('ios-message');
   } else {
     rhinaVideo.classList.add('web-video');
+    quizMessage.classList.add('web-message');
   }
 }
 
