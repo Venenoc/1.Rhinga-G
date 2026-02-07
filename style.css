@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0;
 }
 
 .app {
@@ -25,6 +26,7 @@ body {
   flex-direction: column;
   padding: 20px;
   overflow: hidden;
+  max-height: 100dvh;
 }
 
 /* pulso sobre el fondo sin afectar el contenido */
@@ -64,7 +66,7 @@ body {
   align-items: center;
   gap: 30px;
   text-align: center;
-  margin-top: 240px;
+  justify-content: center;
 }
 
 #start-screen h1 {
@@ -102,8 +104,6 @@ body {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 20px;
-  margin-top: 160px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border: 3px solid #fff;
   box-sizing: border-box;
