@@ -238,7 +238,7 @@ body {
 
 /* Mensaje específico para iOS */
 .ios-message {
-  bottom: 80px !important;
+  bottom: 60px !important;
 }
 
 /* Mensaje específico para Android */
