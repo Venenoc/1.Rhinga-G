@@ -52,4 +52,18 @@ startBtn.addEventListener("click", () => {
   }
 });
 
+// Detectar plataforma y aplicar clase específica al video
+function setVideoPlatformClass() {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  if (/android/i.test(ua)) {
+    rhinaVideo.classList.add('android-video');
+  } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    rhinaVideo.classList.add('ios-video');
+  } else {
+    rhinaVideo.classList.add('web-video');
+  }
+}
+
+setVideoPlatformClass();
+
 console.log("Script cargado correctamente"); // Mensaje de depuración

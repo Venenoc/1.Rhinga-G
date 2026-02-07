@@ -184,6 +184,19 @@ body {
   display: block;
 }
 
+/* Estilos específicos para iOS */
+.ios-video {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: 0 !important;
+  transform: translateX(-50%) !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  z-index: 100 !important;
+  width: 100vw !important;
+  max-width: 420px !important;
+}
+
 /*
   Animación de pulso para el fondo
 */
@@ -205,7 +218,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 110px;
+  bottom: 100px;
   margin: 0 auto;
   font-weight: bold;
 }
