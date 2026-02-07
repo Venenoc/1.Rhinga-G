@@ -1,26 +1,21 @@
-# Quiz App
+# Video Interactivo: ¿Quieres ser mi San Valentín? 💘
 
-Pequeña app de quiz con:
+Este proyecto es una página web interactiva para sorprender a alguien especial y pedirle que sea tu San Valentín.
 
-- 3 opciones por pregunta
-- Resaltado verde para correcta y rojo para equivocada
-- Revela la respuesta correcta si fallas
-- Puntaje acumulado (+1 por acierto)
-- Cambiar imagen de fondo (subir imagen)
-- Subir audio para pregunta y opciones
-- Barra de tiempo de 5 segundos por pregunta
+## ¿Cómo funciona?
+- Al abrir la página, aparece un botón para ver una sorpresa.
+- Al hacer clic, se muestra un video especial.
+- Mientras inicia el video, aparecen corazones animados flotando en la pantalla.
+- Al terminar el video, aparece un mensaje romántico: "¡Gracias por ver el video! ¿Te gustaría ser mi San Valentín? 💘"
 
-Cómo usar:
+## Archivos principales
+- `index.html`: Estructura de la página y comentarios explicativos.
+- `style.css`: Estilos visuales, animaciones y comentarios detallados.
+- `script.js`: Lógica de interacción, animación de corazones y comentarios en cada función.
 
-1. Abrir `index.html` en el navegador o servir la carpeta con un servidor estático.
+## Personalización
+Puedes cambiar el video, el mensaje final o los estilos para adaptarlo a tu propio mensaje romántico.
 
-2. En la sección "Ajustes" puedes cargar una imagen de fondo y audios (pregunta/opciones) para la pregunta actual.
+---
 
-3. Responde haciendo clic en una opción. El temporizador es de 5 segundos; si expira se revela la respuesta correcta.
-
-Comando rápido (PowerShell) para servir la carpeta localmente:
-
-```powershell
-cd "c:\CARLOS\OneDrive\2026\2.Febrero\3.Canal Trampa Mental\0.Crear App para san valentin"
-python -m http.server 8000
-```
+¡Sorprende a tu persona especial con este detalle digital! ❤️

@@ -4,23 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quiz San Valentín</title>
+  <!-- Enlaza la hoja de estilos principal -->
   <link rel="stylesheet" href="style.css">
+  <!-- Fuente romántica para el mensaje final -->
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Contenedor global de corazones flotantes (efecto visual romántico) -->
   <div id="hearts-container"></div>
+  <!-- Contenedor principal de la app -->
   <div class="app">
+    <!-- Pantalla de inicio, ahora oculta -->
     <div id="start-screen" class="screen active">
       <div class="content">
+        <!-- Video sorpresa para pedir que seas mi San Valentín -->
         <video id="rhinaVideo" class="rhina-video" playsinline webkit-playsinline controlsList="nofullscreen" disablePictureInPicture>
           <source src="https://res.cloudinary.com/dio3db11v/video/upload/v1770431153/1.Rhinaf_b2lewf.mp4" type="video/mp4">
         </video>
+        <!-- Botón para iniciar la sorpresa romántica -->
         <button id="startBtn" class="btn-start">💘 ¡Ver sorpresa!</button>
       </div>
     </div>
+    <!-- Pantalla del mensaje final, ahora visible al cargar -->
     <div id="quiz-screen" class="screen">
-      <!-- aquí irá el contenido del quiz pensar asd-->
+      <!-- Mensaje romántico mostrado al terminar el video -->
+      <div id="quiz-message" class="quiz-message">
+        <p>Rhii</p>
+        <p>¿Te gustaría ser mi</p>
+        <p> San Valentín? 💘</p>
+      </div>
     </div>
   </div>
+  <!-- Script principal de la app -->
   <script src="script.js"></script>
 </body>
 </html>

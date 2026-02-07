@@ -1,12 +1,14 @@
-﻿/* Efecto corazones */
+﻿/*
+  Efecto corazones flotantes: contenedor y animación de corazones
+*/
 #hearts-container {
-  position: fixed;
+  position: fixed; /* Siempre visible en pantalla */
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  pointer-events: none;
-  z-index: 99999;
+  pointer-events: none; /* No bloquea clics */
+  z-index: 99999; /* Encima de todo */
 }
 
 .heart {
@@ -14,7 +16,7 @@
   font-size: 2rem;
   color: #e91e63;
   opacity: 0.8;
-  animation: floatHeart 2s linear forwards;
+  animation: floatHeart 2s linear forwards; /* Animación de flotado */
 }
 
 @keyframes floatHeart {
@@ -30,6 +32,10 @@
     opacity: 0;
   }
 }
+
+/*
+  Reset y estilos base
+*/
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +52,9 @@ body {
   padding: 0;
 }
 
+/*
+  Ajuste de altura para móviles
+*/
 @media (max-width: 600px) {
   body {
     min-height: 100dvh;
@@ -55,6 +64,9 @@ body {
   }
 }
 
+/*
+  Contenedor principal de la app
+*/
 .app {
   width: min(420px, 90vw);
   aspect-ratio: 9 / 16;
@@ -70,7 +82,9 @@ body {
   max-height: 100dvh;
 }
 
-/* pulso sobre el fondo sin afectar el contenido */
+/*
+  Efecto de pulso animado en el fondo
+*/
 .app::before{
   content: "";
   position: absolute;
@@ -88,6 +102,9 @@ body {
 
 .app > * { position: relative; z-index: 1; }
 
+/*
+  Pantallas de la app (inicio y quiz)
+*/
 .screen {
   display: none;
   width: 100%;
@@ -101,6 +118,9 @@ body {
   display: flex;
 }
 
+/*
+  Contenido de la pantalla de inicio
+*/
 #start-screen .content {
   display: flex;
   flex-direction: column;
@@ -118,6 +138,9 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/*
+  Botón de inicio
+*/
 .btn-start {
   padding: 14px 28px;
   font-size: 1.1rem;
@@ -140,6 +163,9 @@ body {
   transform: translateY(0);
 }
 
+/*
+  Video sorpresa
+*/
 .rhina-video {
   width: 100%;
   max-width: 380px;
@@ -158,9 +184,28 @@ body {
   display: block;
 }
 
+/*
+  Animación de pulso para el fondo
+*/
 @keyframes pulseBg{
   0% { transform: scale(1); filter: brightness(1); }
   40% { transform: scale(1.02); filter: brightness(1.06); }
   70% { transform: scale(1.01); filter: brightness(1.02); }
   100% { transform: scale(1); filter: brightness(1); }
+}
+
+/*
+  Mensaje en pantalla de quiz
+*/
+.quiz-message {
+  font-size: 2.8rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Great Vibes', cursive, 'Segoe UI', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  margin: 0 auto;
+  font-weight: bold;
 }
