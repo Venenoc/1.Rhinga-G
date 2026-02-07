@@ -193,7 +193,20 @@ body {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   z-index: 100 !important;
-  width: 60% !important;
+  width: 70% !important;
+  max-width: 420px !important;
+}
+
+/* Estilos específicos para Android */
+.android-video {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: 40px !important;
+  transform: translateX(-50%) !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  z-index: 100 !important;
+  width: 70% !important;
   max-width: 420px !important;
 }
 
